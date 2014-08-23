@@ -10,9 +10,9 @@
    - [ ] Lolo Amulet
       - [ ] Gives user Invisability (put in chestplace slot)
       - [ ] Crafted:
-        [S][S][S]
-        [S][C][S]
-        [C][X][C]
+         [S][S][S]
+         [S][C][S]
+         [C][X][C]
                     X = Amethyst
                     C = Gold
                     S = String
