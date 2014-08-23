@@ -1,53 +1,53 @@
-- [ ] Lolo Mod <br>
-   - [ ] Amethyst Ore <br>
-      - [ ] Amethyst Ingot/Chumk <br>
-         - [ ] Makes Tools <br>
-         - [ ] Makes Armor <br>
-         - [ ] Makes wepons <br>
-   - [ ] Lolo Mobs <br>
-      - [ ] Wolf like <br>
-         - [ ] Tames with cooked Chicken <br>
-   - [ ] Lolo Amulet <br>
-      - [ ] Gives user Invisability (put in chestplace slot) <br>
-      - [ ] Crafted: <br>
-         [S][S][S] <br>
-         [S][C][S] <br>
-         [C][X][C] <br>
-                    X = Amethyst <br>
-                    C = Gold <br>
-                    S = String <br>
-   - [ ] Lolo Headphones (put in helemt slot) <br>
-      - [ ] Crafted <br>
-         [W][W][W] <br>
-         [W][R][W] <br>
-         [D][ ][D] <br>
-                    W = Black Wool <br>
-                    R = Redstone <br>
-                    D = Red Wool <br>
- <br>
- <br>
-- [ ] Zombie Mod <br>
-   - [ ] Butter <br>
-   - [ ] Chocolate <br>
-   - [ ] Sheep Block <br>
-   - [ ] Churn <br>
-   - [ ] Sheep Armor <br>
-   - [ ] Chocolate Armor (Works as food too) <br>
-   - [ ] Chocolate Apple <br>
-   - [ ] Derpy mask <br>
-   - [ ] Glasses (shades) (put in helmet slot) <br>
-      - [ ] Crafted (Maybe) <br>
-         [W][W][W] <br>
-         [G][W][G] <br>
-         [W][W][W] <br>
-                  G = Glass pane <br>
-                  W = Wood <br>
-      - [ ] Glasses Upgrade (Gives Night Vision) <br>
-         - [ ] Crafted (Maybe) <br>
-            [W][W][W] <br>
-            [W][G][W] <br>
-            [W][W][W] <br>
-                     G = Glasses <br>
-                     W = Chocolate <br>
-   - [ ] Derpy chocolate sheep (Has a derpy face) <br>
-      - [ ] When you give a sheep chocolate it gets tamed and turned into derpy chocolate sheep <br>
+- [ ] Lolo Mod
+   - [ ] Amethyst Ore
+      - [ ] Amethyst Ingot/Chumk
+         - [ ] Makes Tools
+         - [ ] Makes Armor
+         - [ ] Makes wepons
+   - [ ] Lolo Mobs
+      - [ ] Wolf like
+         - [ ] Tames with cooked Chicken
+   - [ ] Lolo Amulet
+      - [ ] Gives user Invisability (put in chestplace slot)
+      - [ ] Crafted:
+         [S][S][S]
+         [S][C][S]
+         [C][X][C]
+                    X = Amethyst
+                    C = Gold
+                    S = String
+   - [ ] Lolo Headphones (put in helemt slot)
+      - [ ] Crafted
+         [W][W][W]
+         [W][R][W]
+         [D][ ][D]
+                    W = Black Wool
+                    R = Redstone
+                    D = Red Wool
+
+
+- [ ] Zombie Mod
+   - [ ] Butter
+   - [ ] Chocolate
+   - [ ] Sheep Block
+   - [ ] Churn
+   - [ ] Sheep Armor
+   - [ ] Chocolate Armor (Works as food too)
+   - [ ] Chocolate Apple
+   - [ ] Derpy mask
+   - [ ] Glasses (shades) (put in helmet slot)
+      - [ ] Crafted (Maybe)
+         [W][W][W]
+         [G][W][G]
+         [W][W][W]
+                  G = Glass pane
+                  W = Wood
+      - [ ] Glasses Upgrade (Gives Night Vision)
+         - [ ] Crafted (Maybe)
+            [W][W][W]
+            [W][G][W]
+            [W][W][W]
+                     G = Glasses
+                     W = Chocolate
+   - [ ] Derpy chocolate sheep (Has a derpy face)
+      - [ ] When you give a sheep chocolate it gets tamed and turned into derpy chocolate sheep
