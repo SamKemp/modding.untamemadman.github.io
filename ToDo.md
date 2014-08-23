@@ -15,8 +15,8 @@
                  X = Amethyst
                  C = Gold
                  S = String
-- [ ] Lolo Headphones
+- [ ] Lolo Headphones (put in helemt slot)
    - [ ] Crafted
-            [ ][ ][ ]
-            [ ][ ][ ]
-            [ ][ ][ ]
+            [?][?][?]
+            [?][?][?]
+            [?][?][?]
