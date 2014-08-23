@@ -18,9 +18,11 @@
                     S = String
    - [ ] Lolo Headphones (put in helemt slot)
       - [ ] Crafted
-         [?][?][?]
-         [?][?][?]
-         [?][?][?]
+         [W][W][W]
+         [W][R][W]
+         [ ][ ][R]
+                    W = Black Wool
+                    R = Redstone
 
 
 - [ ] Zombie Mod
