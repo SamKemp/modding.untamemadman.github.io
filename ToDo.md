@@ -20,9 +20,10 @@
       - [ ] Crafted
          [W][W][W]
          [W][R][W]
-         [ ][ ][R]
+         [D][ ][D]
                     W = Black Wool
                     R = Redstone
+                    D = Red Wool
 
 
 - [ ] Zombie Mod
