@@ -31,3 +31,19 @@
    - [ ] Sheep Armor
    - [ ] Chocolate Armor (Works as food too)
    - [ ] Chocolate Apple
+   - [ ] Glasses (shades) (put in helmet slot)
+      - [ ] Crafted (Maybe)
+         [W][W][W]
+         [G][W][G]
+         [W][W][W]
+                  G = Glass pane
+                  W = Wood
+      - [ ] Glasses Upgrade (Gives Night Vision)
+         - [ ] Crafted (Maybe)
+            [W][W][W]
+            [W][G][W]
+            [W][W][W]
+                     G = Glasses
+                     W = Chocolate
+   - [ ] Derpy chocolate sheep (Has a derpy face)
+      - [ ] When you give a sheep chocolate it gets tamed and turned into derpy chocolate sheep
