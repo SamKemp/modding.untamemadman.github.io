@@ -29,3 +29,5 @@
    - [ ] Sheep Block
    - [ ] Churn
    - [ ] Sheep Armor
+   - [ ] Chocolate Armor (Works as food too)
+   - [ ] Chocolate Apple
