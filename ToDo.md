@@ -35,13 +35,13 @@
 
 - [ ] Zombie Mod
    - [X] Butter
-   - [ ] Chocolate
+   - [X] Chocolate
    - [X] Wrapper
    - [X] Sheep Block
-   - [ ] Sheep Armor
+   - [X] Sheep Armor
    - [ ] Chocolate Armor (Works as food too)
    - [ ] Chocolate Apple
-   - [ ] Derpy mask
+   - [X] Derpy mask
    - [ ] Glasses (shades) (put in helmet slot)
       - [ ] Crafted (Maybe)
          [W][W][W]
