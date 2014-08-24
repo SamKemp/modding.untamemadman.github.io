@@ -24,6 +24,7 @@
                     W = Black Wool
                     R = Redstone
                     D = Red Wool
+   - [ ] Lolo dragon!
 
 
 - [ ] Zombie Mod
