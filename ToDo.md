@@ -27,9 +27,9 @@
          [W][W][W]
          [W][R][W]
          [D][ ][D]
-                    W = Black Wool
+                    W = Red Wool
                     R = Redstone
-                    D = Red Wool
+                    D = Black Wool
    - [ ] Lolo dragon!
 
 
