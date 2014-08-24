@@ -34,10 +34,10 @@
 
 
 - [ ] Zombie Mod
-   - [ ] Butter
+   - [X] Butter
    - [ ] Chocolate
-   - [ ] Sheep Block
-   - [ ] Churn
+   - [X] Wrapper
+   - [X] Sheep Block
    - [ ] Sheep Armor
    - [ ] Chocolate Armor (Works as food too)
    - [ ] Chocolate Apple
