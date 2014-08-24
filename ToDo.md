@@ -7,14 +7,20 @@
    - [ ] Lolo Mobs
       - [ ] Wolf like
          - [ ] Tames with cooked Chicken
+   - [ ] Lolo Token
+      - [ ] Crafted:
+         [ ][C][ ]
+         [C][X][C]
+         [ ][C][ ]
+                    X = Amethyst
+                    C = Gold
    - [ ] Lolo Amulet
       - [ ] Gives user Invisability (put in chestplace slot)
       - [ ] Crafted:
          [S][S][S]
-         [S][C][S]
-         [C][X][C]
-                    X = Amethyst
-                    C = Gold
+         [S][ ][S]
+         [ ][X][ ]
+                    X = Lolo Token
                     S = String
    - [ ] Lolo Headphones (put in helemt slot)
       - [ ] Crafted
