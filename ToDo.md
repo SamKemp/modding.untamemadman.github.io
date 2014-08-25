@@ -42,15 +42,21 @@
    - [ ] Chocolate Armor (Works as food too)
    - [ ] Chocolate Apple
    - [X] Derpy mask
-   - [ ] Glasses (shades) (put in helmet slot)
-      - [ ] Crafted (Maybe)
+      - [X] Crafted
+         [X][X][X]
+         [S][X][S]
+         [X][X][X]
+                  S = String
+                  X = Wool
+   - [X] Glasses (shades) (put in helmet slot)
+      - [X] Crafted
          [W][W][W]
          [G][W][G]
          [W][W][W]
                   G = Glass pane
-                  W = Wood
+                  W = Iron
       - [ ] Glasses Upgrade (Gives Night Vision)
-         - [ ] Crafted (Maybe)
+         - [ ] Crafted
             [W][W][W]
             [W][G][W]
             [W][W][W]
