@@ -39,8 +39,7 @@
    - [X] Wrapper
    - [X] Sheep Block
    - [X] Sheep Armor
-   - [ ] Chocolate Armor (Works as food too)
-   - [ ] Chocolate Apple
+   - [X] Chocolate Apple
    - [X] Derpy mask
       - [X] Crafted
          [X][X][X]
@@ -56,7 +55,7 @@
                   G = Glass pane
                   W = Iron
       - [ ] Glasses Upgrade (Gives Night Vision)
-         - [ ] Crafted
+         - [X] Crafted
             [W][W][W]
             [W][G][W]
             [W][W][W]
