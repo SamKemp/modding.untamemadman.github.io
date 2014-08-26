@@ -54,7 +54,7 @@
          [W][W][W]
                   G = Glass pane
                   W = Iron
-      - [ ] Glasses Upgrade (Gives Night Vision)
+      - [X] Glasses Upgrade (Gives Night Vision)
          - [X] Crafted
             [W][W][W]
             [W][G][W]
