@@ -62,4 +62,3 @@
                      G = Glasses
                      W = Chocolate
    - [ ] Derpy chocolate sheep (Has a derpy face)
-      - [ ] When you give a sheep chocolate it gets tamed and turned into derpy chocolate sheep
