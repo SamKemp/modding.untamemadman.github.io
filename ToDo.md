@@ -40,6 +40,7 @@
    - [X] Sheep Block
    - [X] Sheep Armor
    - [X] Chocolate Apple
+   - [ ] Chocolate sandwich
    - [X] Derpy mask
       - [X] Crafted
          [X][X][X]
@@ -61,4 +62,10 @@
             [W][W][W]
                      G = Glasses
                      W = Chocolate
+   - [ ] Pineapple
+      - [ ] Seeds
+      - [ ] Crop (like pumpkins)
+      - [ ] Chunks
+      - [ ] Smoothie
+      - [ ] Sandwich
    - [ ] Derpy chocolate sheep (Has a derpy face)
