@@ -62,3 +62,4 @@
                      G = Glasses
                      W = Chocolate
    - [ ] Derpy chocolate sheep (Has a derpy face)
+   - [ ] Dlyan the bat
