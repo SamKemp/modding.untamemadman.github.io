@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Recipes.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+Recipes.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod.init; 
+ 
+</span><span class="s0">import </span><span class="s1">net.minecraft.init.Blocks; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.init.Items; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemStack; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.registry.GameRegistry; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/armor/DerpyMask.java.html">pw.untamemadman.modding.zombiemod.armor.DerpyMask</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/armor/Glasses.java.html">pw.untamemadman.modding.zombiemod.armor.Glasses</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/armor/GlassesUpgrade.java.html">pw.untamemadman.modding.zombiemod.armor.GlassesUpgrade</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">pw.untamemadman.modding.zombiemod.armor.SheepArmor</a></span><span class="s1">; 
+ 
+</span><span class="s0">public class </span><span class="s1">Recipes { 
+    </span><span class="s0">public static void </span><span class="s1">init() 
+    { 
+        </span><span class="s2">//Butter</span><span class="s1"> 
+        GameRegistry.addSmelting(</span><span class="s0">new </span><span class="s1">ItemStack(Items.milk_bucket), </span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Butter), </span><span class="s3">1</span><span class="s1">); 
+ 
+        </span><span class="s2">//Wrapper</span><span class="s1"> 
+        GameRegistry.addShapedRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Wrapper), </span><span class="s4">&quot; L &quot;</span><span class="s1">, </span><span class="s4">&quot;L L&quot;</span><span class="s1">, </span><span class="s4">&quot; L &quot;</span><span class="s1">, </span><span class="s4">'L'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Items.leather)); 
+ 
+        </span><span class="s2">//Chocolate</span><span class="s1"> 
+        GameRegistry.addShapedRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Chocolate), </span><span class="s4">&quot; S &quot;</span><span class="s1">, </span><span class="s4">&quot;SBS&quot;</span><span class="s1">, </span><span class="s4">&quot; W &quot;</span><span class="s1">, </span><span class="s4">'S'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Items.cookie), </span><span class="s4">'B'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Butter), </span><span class="s4">'W'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Wrapper)); 
+ 
+        </span><span class="s2">//Glasses</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/Glasses.java.html">Glasses</a>.Glasses), </span><span class="s4">&quot;WWW&quot;</span><span class="s1">, </span><span class="s4">&quot;GWG&quot;</span><span class="s1">, </span><span class="s4">&quot;WWW&quot;</span><span class="s1">, </span><span class="s4">'G'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.glass_pane), </span><span class="s4">'W'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Items.iron_ingot)); 
+ 
+        </span><span class="s2">//Better Glasses</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/GlassesUpgrade.java.html">GlassesUpgrade</a>.GlassesUpgrade), </span><span class="s4">&quot;WWW&quot;</span><span class="s1">, </span><span class="s4">&quot;WGW&quot;</span><span class="s1">, </span><span class="s4">&quot;WWW&quot;</span><span class="s1">, </span><span class="s4">'W'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Chocolate), </span><span class="s4">'G'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/Glasses.java.html">Glasses</a>.Glasses)); 
+ 
+        </span><span class="s2">//Derpy Mask</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/DerpyMask.java.html">DerpyMask</a>.DerpyMask), </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">&quot;SXS&quot;</span><span class="s1">, </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.wool), </span><span class="s4">'S'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Items.string)); 
+ 
+        </span><span class="s2">//Chocolate Apples</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.ChocolateApple), </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">&quot;XCX&quot;</span><span class="s1">, </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Chocolate), </span><span class="s4">'C'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Items.golden_apple)); 
+ 
+        </span><span class="s2">//Chocolate Sandwich</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.ChocolateSandwich), </span><span class="s4">&quot; X &quot;</span><span class="s1">, </span><span class="s4">&quot; C &quot;</span><span class="s1">, </span><span class="s4">&quot; X &quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Items.bread), </span><span class="s4">'C'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModItems.java.html">ModItems</a>.Chocolate)); 
+ 
+        </span><span class="s2">//Sheep</span><span class="s1"> 
+        </span><span class="s2">//Helmet</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">SheepArmor</a>.SheepHelmet), </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">&quot;X X&quot;</span><span class="s1">, </span><span class="s4">&quot;   &quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.wool)); 
+        </span><span class="s2">//Chestplate</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">SheepArmor</a>.SheepChestplate), </span><span class="s4">&quot;X X&quot;</span><span class="s1">, </span><span class="s4">&quot;XXX&quot;</span><span class="s1">,</span><span class="s4">&quot;XXX&quot;</span><span class="s1">,</span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.wool)); 
+        </span><span class="s2">//Pants</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">SheepArmor</a>.SheepPants), </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">&quot;X X&quot;</span><span class="s1">, </span><span class="s4">&quot;X X&quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.wool)); 
+        </span><span class="s2">//Boots</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="../../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">SheepArmor</a>.SheepBoots), </span><span class="s4">&quot;   &quot;</span><span class="s1">, </span><span class="s4">&quot;X X&quot;</span><span class="s1">, </span><span class="s4">&quot;X X&quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.wool)); 
+        </span><span class="s2">//Block</span><span class="s1"> 
+        GameRegistry.addRecipe(</span><span class="s0">new </span><span class="s1">ItemStack(<a href="ModBlocks.java.html">ModBlocks</a>.Sheep), </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">&quot;XXX&quot;</span><span class="s1">, </span><span class="s4">'X'</span><span class="s1">, </span><span class="s0">new </span><span class="s1">ItemStack(Blocks.wool)); 
+    } 
+}</span></pre>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>ItemChocolateApple.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(128,128,128); font-style: italic; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ItemChocolateApple.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod.item; 
+ 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.relauncher.Side; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.relauncher.SideOnly; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.creativetab.CreativeTabs; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.entity.player.EntityPlayer; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.EnumRarity; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.Item; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemFood; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemStack; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.potion.Potion; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.potion.PotionAbsoption; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.potion.PotionEffect; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.world.World; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/creativetab/CreativeTabZombieMod.java.html">pw.untamemadman.modding.zombiemod.creativetab.CreativeTabZombieMod</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">pw.untamemadman.modding.zombiemod.reference.Reference</a></span><span class="s1">; 
+ 
+</span><span class="s0">import </span><span class="s1">java.util.List; 
+ 
+</span><span class="s0">public class </span><span class="s1">ItemChocolateApple </span><span class="s0">extends </span><span class="s1">ItemFood 
+{ 
+    </span><span class="s0">private static final </span><span class="s1">String __OBFID = </span><span class="s2">&quot;CL_00000037&quot;</span><span class="s1">; 
+ 
+    </span><span class="s0">public </span><span class="s1">ItemChocolateApple(</span><span class="s0">int </span><span class="s1">p_i45341_1_, </span><span class="s0">float </span><span class="s1">p_i45341_2_, </span><span class="s0">boolean </span><span class="s1">p_i45341_3_) 
+    { 
+        </span><span class="s0">super</span><span class="s1">(p_i45341_1_, p_i45341_2_, p_i45341_3_); 
+        </span><span class="s0">this</span><span class="s1">.setHasSubtypes(</span><span class="s0">true</span><span class="s1">); 
+        </span><span class="s0">this</span><span class="s1">.setCreativeTab(<a href="../../../../../pw/untamemadman/modding/zombiemod/creativetab/CreativeTabZombieMod.java.html">CreativeTabZombieMod</a>.ZOMBIEMOD_TAB); 
+        </span><span class="s0">this</span><span class="s1">.setUnlocalizedName(</span><span class="s2">&quot;ChocolateApple&quot;</span><span class="s1">); 
+        </span><span class="s0">this</span><span class="s1">.setTextureName(<a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID.toLowerCase() + </span><span class="s2">&quot;:&quot; </span><span class="s1">+ getUnlocalizedName().substring(</span><span class="s3">5</span><span class="s1">)); 
+        </span><span class="s0">this</span><span class="s1">.setAlwaysEdible(); 
+    } 
+ 
+    @SideOnly(Side.CLIENT) 
+    </span><span class="s0">public boolean </span><span class="s1">hasEffect(ItemStack p_77636_1_) 
+    { 
+        </span><span class="s0">return </span><span class="s1">p_77636_1_.getItemDamage() &gt; </span><span class="s3">0</span><span class="s1">; 
+    } 
+ 
+    </span><span class="s4">/** 
+     * Return an item rarity from EnumRarity 
+     */</span><span class="s1"> 
+    </span><span class="s0">public </span><span class="s1">EnumRarity getRarity(ItemStack p_77613_1_) 
+    { 
+        </span><span class="s0">return </span><span class="s1">p_77613_1_.getItemDamage() == </span><span class="s3">0 </span><span class="s1">? EnumRarity.rare : EnumRarity.epic; 
+    } 
+ 
+    </span><span class="s0">protected void </span><span class="s1">onFoodEaten(ItemStack p_77849_1_, World p_77849_2_, EntityPlayer p_77849_3_) 
+    { 
+        </span><span class="s0">if </span><span class="s1">(!p_77849_2_.isRemote) 
+        { 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.field_76444_x.id, </span><span class="s3">2400</span><span class="s1">, </span><span class="s3">4</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.regeneration.id, </span><span class="s3">600</span><span class="s1">, </span><span class="s3">4</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.resistance.id, </span><span class="s3">6000</span><span class="s1">, </span><span class="s3">1</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.fireResistance.id, </span><span class="s3">6000</span><span class="s1">, </span><span class="s3">1</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.digSpeed.id, </span><span class="s3">6000</span><span class="s1">, </span><span class="s3">2</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.moveSpeed.id, </span><span class="s3">6000</span><span class="s1">, </span><span class="s3">2</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.jump.id, </span><span class="s3">6000</span><span class="s1">, </span><span class="s3">2</span><span class="s1">)); 
+            p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(</span><span class="s3">5</span><span class="s1">, </span><span class="s3">6000</span><span class="s1">, </span><span class="s3">2</span><span class="s1">)); 
+        } 
+ 
+        </span><span class="s0">if </span><span class="s1">(p_77849_1_.getItemDamage() &gt; </span><span class="s3">0</span><span class="s1">) 
+        { 
+            </span><span class="s0">if </span><span class="s1">(!p_77849_2_.isRemote) 
+            { 
+                p_77849_3_.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.nightVision.id, </span><span class="s3">600</span><span class="s1">, </span><span class="s3">1</span><span class="s1">)); 
+            } 
+        } 
+        </span><span class="s0">else</span><span class="s1"> 
+        { 
+            </span><span class="s0">super</span><span class="s1">.onFoodEaten(p_77849_1_, p_77849_2_, p_77849_3_); 
+        } 
+    } 
+ 
+    </span><span class="s4">/** 
+     * returns a list of items with the same ID, but different meta (eg: dye returns 16 items) 
+     */</span><span class="s1"> 
+    @SideOnly(Side.CLIENT) 
+    </span><span class="s0">public void </span><span class="s1">getSubItems(Item p_150895_1_, CreativeTabs p_150895_2_, List p_150895_3_) 
+    { 
+        p_150895_3_.add(</span><span class="s0">new </span><span class="s1">ItemStack(p_150895_1_, </span><span class="s3">1</span><span class="s1">, </span><span class="s3">0</span><span class="s1">)); 
+        p_150895_3_.add(</span><span class="s0">new </span><span class="s1">ItemStack(p_150895_1_, </span><span class="s3">1</span><span class="s1">, </span><span class="s3">1</span><span class="s1">)); 
+    } 
+}</span></pre>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>ItemGlassesUpgrade.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,0,255); }
+.s4 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ItemGlassesUpgrade.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod.armor; 
+ 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.relauncher.Side; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.relauncher.SideOnly; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.entity.Entity; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.entity.player.EntityPlayer; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemArmor; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemStack; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.potion.Potion; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.potion.PotionEffect; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.world.World; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/creativetab/CreativeTabZombieMod.java.html">pw.untamemadman.modding.zombiemod.creativetab.CreativeTabZombieMod</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">pw.untamemadman.modding.zombiemod.reference.Reference</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/utility/LogHelper.java.html">pw.untamemadman.modding.zombiemod.utility.LogHelper</a></span><span class="s1">; 
+ 
+</span><span class="s2">/** 
+ * Created by Sam on 8/25/2014. 
+ */</span><span class="s1"> 
+</span><span class="s0">public class </span><span class="s1">ItemGlassesUpgrade </span><span class="s0">extends </span><span class="s1">ItemArmor 
+{ 
+    </span><span class="s0">public </span><span class="s1">ItemGlassesUpgrade(ItemArmor.ArmorMaterial material, </span><span class="s0">int </span><span class="s1">armorType, String name) 
+    { 
+        </span><span class="s0">super</span><span class="s1">(material, </span><span class="s3">0</span><span class="s1">, armorType); 
+        setUnlocalizedName(name); 
+        setTextureName(<a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID.toLowerCase() + </span><span class="s4">&quot;:&quot; </span><span class="s1">+ getUnlocalizedName().substring(</span><span class="s3">5</span><span class="s1">)); 
+        setCreativeTab(<a href="../../../../../pw/untamemadman/modding/zombiemod/creativetab/CreativeTabZombieMod.java.html">CreativeTabZombieMod</a>.ZOMBIEMOD_TAB); 
+    } 
+ 
+    @Override 
+    </span><span class="s0">public void </span><span class="s1">onArmorTick(World world, EntityPlayer player, ItemStack armor) 
+    { 
+        </span><span class="s0">if</span><span class="s1">(!world.isRemote) 
+        { 
+            player.addPotionEffect(</span><span class="s0">new </span><span class="s1">PotionEffect(Potion.nightVision.id, </span><span class="s3">2</span><span class="s1">, </span><span class="s3">1</span><span class="s1">, </span><span class="s0">true</span><span class="s1">)); 
+        } 
+    } 
+    @SideOnly(Side.CLIENT) 
+    </span><span class="s0">public boolean </span><span class="s1">hasEffect(ItemStack par1ItemStack) 
+    { 
+        </span><span class="s0">return true</span><span class="s1">; 
+    } 
+ 
+    @Override 
+    </span><span class="s0">public </span><span class="s1">String getArmorTexture(ItemStack stack, Entity entity, </span><span class="s0">int </span><span class="s1">slot, String type) 
+    { 
+        </span><span class="s0">if</span><span class="s1">(stack.getItem()== <a href="GlassesUpgrade.java.html">GlassesUpgrade</a>.GlassesUpgrade) 
+        { 
+            </span><span class="s0">return <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a></span><span class="s1">.MOD_ID + </span><span class="s4">&quot;:models/armor/GlassesUpgrade.png&quot;</span><span class="s1">; 
+        } 
+        </span><span class="s0">else</span><span class="s1"> 
+        { 
+            </span><span class="s0">return null</span><span class="s1">; 
+        } 
+    } 
+}</span></pre>
+</body>
+</html>

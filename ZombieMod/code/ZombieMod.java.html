@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>ZombieMod.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ZombieMod.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod; 
+ 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/armor/DerpyMask.java.html">pw.untamemadman.modding.zombiemod.armor.DerpyMask</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/armor/Glasses.java.html">pw.untamemadman.modding.zombiemod.armor.Glasses</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/armor/GlassesUpgrade.java.html">pw.untamemadman.modding.zombiemod.armor.GlassesUpgrade</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">pw.untamemadman.modding.zombiemod.armor.SheepArmor</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/handeler/ConfigHandeler.java.html">pw.untamemadman.modding.zombiemod.handeler.ConfigHandeler</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/init/ModBlocks.java.html">pw.untamemadman.modding.zombiemod.init.ModBlocks</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/init/ModItems.java.html">pw.untamemadman.modding.zombiemod.init.ModItems</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/init/Recipes.java.html">pw.untamemadman.modding.zombiemod.init.Recipes</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/proxy/CommonProxy.java.html">pw.untamemadman.modding.zombiemod.proxy.CommonProxy</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">pw.untamemadman.modding.zombiemod.reference.Reference</a></span><span class="s1">; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.Mod; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.SidedProxy; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.event.FMLInitializationEvent; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.event.FMLPostInitializationEvent; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.event.FMLPreInitializationEvent; 
+ 
+@Mod(modid = <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID, name = <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_NAME, version = <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.VERSION, guiFactory = <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.GUIFactoryClass) 
+</span><span class="s0">public class </span><span class="s1">ZombieMod 
+{ 
+    @Mod.Instance(<a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID) 
+    </span><span class="s0">public static </span><span class="s1">ZombieMod instances; 
+     
+    @SidedProxy(clientSide = <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.ClientProxyClass, serverSide = <a href="../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.ServerProxyClass) 
+    </span><span class="s0">public static <a href="../../../../pw/untamemadman/modding/zombiemod/proxy/CommonProxy.java.html">CommonProxy</a> </span><span class="s1">proxy; 
+     
+    @Mod.EventHandler 
+    </span><span class="s0">public void </span><span class="s1">preInit(FMLPreInitializationEvent event) 
+    { 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/handeler/ConfigHandeler.java.html">ConfigHandeler</a>.init(event.getSuggestedConfigurationFile()); 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/init/ModBlocks.java.html">ModBlocks</a>.init(); 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/init/ModItems.java.html">ModItems</a>.init(); 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/armor/SheepArmor.java.html">SheepArmor</a>.RegisterSheepArmor(); 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/armor/DerpyMask.java.html">DerpyMask</a>.RegisterDerpyMask(); 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/armor/Glasses.java.html">Glasses</a>.RegisterGlasses(); 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/armor/GlassesUpgrade.java.html">GlassesUpgrade</a>.RegisterGlassesUpgrade(); 
+        proxy.initCapes(); 
+    } 
+     
+    @Mod.EventHandler 
+    </span><span class="s0">public void </span><span class="s1">Init(FMLInitializationEvent event) 
+    { 
+        <a href="../../../../pw/untamemadman/modding/zombiemod/init/Recipes.java.html">Recipes</a>.init(); 
+    } 
+     
+    @Mod.EventHandler 
+    </span><span class="s0">public void </span><span class="s1">postInit(FMLPostInitializationEvent event) 
+    { 
+ 
+    } 
+} 
+</span></pre>
+</body>
+</html>
