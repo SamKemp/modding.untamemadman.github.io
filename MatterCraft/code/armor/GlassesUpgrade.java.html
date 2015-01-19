@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>GlassesUpgrade.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(128,128,128); font-style: italic; }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+GlassesUpgrade.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod.armor; 
+ 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.Item; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemArmor; 
+</span><span class="s0">import </span><span class="s1">net.minecraftforge.common.util.EnumHelper; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/utility/RegisterHelper.java.html">pw.untamemadman.modding.zombiemod.utility.RegisterHelper</a></span><span class="s1">; 
+ 
+</span><span class="s2">/** 
+ * Created by Sam on 8/25/2014. 
+ */</span><span class="s1"> 
+</span><span class="s0">public class </span><span class="s1">GlassesUpgrade 
+{ 
+    </span><span class="s0">static </span><span class="s1">ItemArmor.ArmorMaterial GlassesUpgradeArmorMaterial = EnumHelper.addArmorMaterial(</span><span class="s3">&quot;GlassesUpgradeArmorMaterial&quot;</span><span class="s1">, </span><span class="s4">1</span><span class="s1">, </span><span class="s0">new int</span><span class="s1">[]{</span><span class="s4">5</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">, </span><span class="s4">0</span><span class="s1">}, </span><span class="s4">0</span><span class="s1">); 
+ 
+    </span><span class="s0">public static </span><span class="s1">Item GlassesUpgrade; 
+ 
+    </span><span class="s0">public static void </span><span class="s1">RegisterGlassesUpgrade() 
+    { 
+        GlassesUpgrade = </span><span class="s0">new <a href="ItemGlassesUpgrade.java.html">ItemGlassesUpgrade</a></span><span class="s1">(GlassesUpgradeArmorMaterial, </span><span class="s4">0</span><span class="s1">, </span><span class="s3">&quot;GlassesUpgrade&quot;</span><span class="s1">); 
+        <a href="../../../../../pw/untamemadman/modding/zombiemod/utility/RegisterHelper.java.html">RegisterHelper</a>.registerItem(GlassesUpgrade); 
+    } 
+} 
+</span></pre>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>ModItems.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(0,0,255); }
+.s3 { color: rgb(0,128,0); font-weight: bold; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ModItems.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod.init; 
+ 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.common.registry.GameRegistry; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemFood; 
+</span><span class="s0">import </span><span class="s1">pw.untamemadman.modding.zombiemod.item.*; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">pw.untamemadman.modding.zombiemod.reference.Reference</a></span><span class="s1">; 
+ 
+@GameRegistry.ObjectHolder(<a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID) 
+</span><span class="s0">public class </span><span class="s1">ModItems 
+{ 
+    </span><span class="s0">public static final <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemWrap.java.html">ItemWrap</a> </span><span class="s1">Butter = </span><span class="s0">new <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemButter.java.html">ItemButter</a></span><span class="s1">(); 
+    </span><span class="s0">public static final </span><span class="s1">ItemFood Chocolate = </span><span class="s0">new <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemChocolate.java.html">ItemChocolate</a></span><span class="s1">(); 
+    </span><span class="s0">public static final </span><span class="s1">ItemFood ChocolateSandwich = </span><span class="s0">new <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemChocolateSandwich.java.html">ItemChocolateSandwich</a></span><span class="s1">(); 
+    </span><span class="s0">public static final <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemWrap.java.html">ItemWrap</a> </span><span class="s1">Wrapper = </span><span class="s0">new <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemWrapper.java.html">ItemWrapper</a></span><span class="s1">(); 
+    </span><span class="s0">public static final </span><span class="s1">ItemFood ChocolateApple = </span><span class="s0">new <a href="../../../../../pw/untamemadman/modding/zombiemod/item/ItemChocolateApple.java.html">ItemChocolateApple</a></span><span class="s1">(</span><span class="s2">1</span><span class="s1">, </span><span class="s2">1.0F</span><span class="s1">, </span><span class="s0">true</span><span class="s1">); 
+    </span><span class="s0">public static void </span><span class="s1">init() 
+    { 
+        GameRegistry.registerItem(Butter, </span><span class="s3">&quot;Butter&quot;</span><span class="s1">); 
+        GameRegistry.registerItem(Chocolate, </span><span class="s3">&quot;Chocolate&quot;</span><span class="s1">); 
+        GameRegistry.registerItem(ChocolateSandwich, </span><span class="s3">&quot;ChocolateSandwich&quot;</span><span class="s1">); 
+        GameRegistry.registerItem(Wrapper, </span><span class="s3">&quot;Wrapper&quot;</span><span class="s1">); 
+        GameRegistry.registerItem(ChocolateApple, </span><span class="s3">&quot;ChocolateApple&quot;</span><span class="s1">); 
+    } 
+}</span></pre>
+</body>
+</html>

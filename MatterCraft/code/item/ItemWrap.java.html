@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>ItemWrap.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: rgb(0,0,0); font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+.s3 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#C0C0C0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+ItemWrap.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+
+<span class="s0">package </span><span class="s1">pw.untamemadman.modding.zombiemod.item; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.relauncher.Side; 
+</span><span class="s0">import </span><span class="s1">cpw.mods.fml.relauncher.SideOnly; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/creativetab/CreativeTabZombieMod.java.html">pw.untamemadman.modding.zombiemod.creativetab.CreativeTabZombieMod</a></span><span class="s1">; 
+</span><span class="s0">import <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">pw.untamemadman.modding.zombiemod.reference.Reference</a></span><span class="s1">; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.client.renderer.texture.IIconRegister; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.creativetab.CreativeTabs; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.Item; 
+</span><span class="s0">import </span><span class="s1">net.minecraft.item.ItemStack; 
+</span><span class="s0">public class </span><span class="s1">ItemWrap </span><span class="s0">extends </span><span class="s1">Item 
+{ 
+    </span><span class="s0">public </span><span class="s1">ItemWrap() 
+    { 
+        </span><span class="s0">super</span><span class="s1">(); 
+        </span><span class="s0">this</span><span class="s1">.setCreativeTab(<a href="../../../../../pw/untamemadman/modding/zombiemod/creativetab/CreativeTabZombieMod.java.html">CreativeTabZombieMod</a>.ZOMBIEMOD_TAB); 
+        </span><span class="s0">this</span><span class="s1">.setFull3D(); 
+    } 
+    @Override 
+    </span><span class="s0">public </span><span class="s1">String getUnlocalizedName() 
+    { 
+        </span><span class="s0">return </span><span class="s1">String.format(</span><span class="s2">&quot;item.%s%s&quot;</span><span class="s1">, <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID.toLowerCase() + </span><span class="s2">&quot;:&quot;</span><span class="s1">, getUnwrappedUnlocalizedName(</span><span class="s0">super</span><span class="s1">.getUnlocalizedName())); 
+    } 
+    @Override 
+    </span><span class="s0">public </span><span class="s1">String getUnlocalizedName(ItemStack itemStack) 
+    { 
+        </span><span class="s0">return </span><span class="s1">String.format(</span><span class="s2">&quot;item.%s%s&quot;</span><span class="s1">, <a href="../../../../../pw/untamemadman/modding/zombiemod/reference/Reference.java.html">Reference</a>.MOD_ID.toLowerCase() + </span><span class="s2">&quot;:&quot;</span><span class="s1">, getUnwrappedUnlocalizedName(</span><span class="s0">super</span><span class="s1">.getUnlocalizedName())); 
+    } 
+    @Override 
+    @SideOnly(Side.CLIENT) 
+    </span><span class="s0">public void </span><span class="s1">registerIcons(IIconRegister iconRegister) 
+    { 
+        itemIcon = iconRegister.registerIcon(</span><span class="s0">this</span><span class="s1">.getUnlocalizedName().substring(</span><span class="s0">this</span><span class="s1">.getUnlocalizedName().indexOf(</span><span class="s2">&quot;.&quot;</span><span class="s1">) + </span><span class="s3">1</span><span class="s1">)); 
+    } 
+    </span><span class="s0">protected </span><span class="s1">String getUnwrappedUnlocalizedName(String unlocalizedName) 
+    { 
+        </span><span class="s0">return </span><span class="s1">unlocalizedName.substring(unlocalizedName.indexOf(</span><span class="s2">&quot;.&quot;</span><span class="s1">) + </span><span class="s3">1</span><span class="s1">); 
+    } 
+}</span></pre>
+</body>
+</html>
